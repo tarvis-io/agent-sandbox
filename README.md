@@ -47,6 +47,6 @@ The Node base is digest-pinned. Change the recipe/base digest to refresh the
 runtime, test it, then update downstream digest pins deliberately.
 
 ```sh
-docker build -t agent-sandbox:test -f Containerfile .
+docker build -t agent-sandbox:test -f Dockerfile .
 docker run --rm -i --network=none agent-sandbox:test sh -s < smoke-test.sh
 ```

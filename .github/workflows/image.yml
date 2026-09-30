@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: Containerfile
+          file: Dockerfile
           load: true
           tags: sandbox:test
           platforms: linux/${{ matrix.arch }}
